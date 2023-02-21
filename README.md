@@ -40,12 +40,14 @@ Client
 Key Features
 
 **[List-structure-branch]**
+**[Add-remove-branch]**
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 - **[List-structure-branch]**
+- **[Add-remove-branch]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
