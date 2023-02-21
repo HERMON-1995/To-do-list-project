@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: blanchedalmond;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-h1 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.todo-container {
+  border: 2px solid black;
+  margin-top: 40px;
+  width: 50%;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-div {
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid burlywood;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+}
+
+.top-div p {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.top-div i {
+  margin-right: 20px;
+}
+
+.add-list {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+#input {
+  margin-left: 20px;
+  border: none;
+  background-color: azure;
+}
+
+.add-btn {
+  background-color: rgb(34, 232, 166);
+  border-color: rgb(61, 241, 181);
+  margin-right: 20px;
+  width: 30px;
+  height: 18px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.li-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.checkbox-cont input {
+  margin-right: 10px;
+}
+
+.checkbox-cont {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.li-list i {
+  margin-right: 20px;
+}
+
+.complete-cont {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: beige;
+  border-top: 1px solid burlywood;
+}
+
+.complete-btn {
+  border: none;
+  background-color: beige;
+  font-weight: 600;
+  font-size: 18px;
+}
