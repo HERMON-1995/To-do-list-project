@@ -81,6 +81,7 @@ section {
 
 .add-btn:hover {
   cursor: pointer;
+  border-color: rgb(127, 226, 190);
 }
 
 .toDoItem {
@@ -131,4 +132,11 @@ section {
   background-color: beige;
   font-weight: 600;
   font-size: 18px;
+}
+
+.complete-btn:hover {
+  color: white;
+  border-radius: 20px;
+  border: 2px solid brown;
+  background-color: brown;
 }
