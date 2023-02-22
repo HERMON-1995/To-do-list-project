@@ -61,6 +61,9 @@ section {
 }
 
 #input {
+  width: 80%;
+  height: 30px;
+  padding: 5px;
   margin-left: 20px;
   border: none;
   background-color: azure;
@@ -76,25 +79,43 @@ section {
   font-size: 12px;
 }
 
-.li-list {
+.add-btn:hover {
+  cursor: pointer;
+}
+
+.toDoItem {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.added-checkbox {
+  display: flex;
   align-items: center;
   height: 50px;
 }
 
-.checkbox-cont input {
+.added-checkbox .item {
   margin-right: 10px;
-}
-
-.checkbox-cont {
-  display: flex;
-  align-items: center;
   margin-left: 20px;
 }
 
-.li-list i {
+.findInput {
+  width: 80%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: azure;
+}
+
+.toDoItem i {
   margin-right: 20px;
+}
+
+.toDoItem i:hover {
+  cursor: pointer;
 }
 
 .complete-cont {
