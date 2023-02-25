@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "deploy": "main -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/HERMON-1995/To-do-list-project/issues"
   },
-  "homepage": "https://hermon-1995.github.io/To-do-list-project/dist/",
+  "homepage": "https://hermon-1995.github.io/To-do-list-project",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
