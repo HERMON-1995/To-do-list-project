@@ -10,6 +10,26 @@
       <title>To-do-list App</title>
   <script defer src="main.js"></script></head>
   <body>
-    <h1>Hello webpack!</h1>
+    <section>
+      <h1 class="todo-h1">My To Do List</h1>
+      <div class="todo-container">
+
+        <div class="top-div">
+          <p class="top-p">Today's to do</p>
+          <i class="fa-sharp fa-solid fa-arrows-rotate" id="rotate"></i>
+        </div>
+
+        <form action="submit" class="add-list">
+          <input type="text" name="add-lists" id="input" class="input" placeholder="Add to your list..." required>
+          <button type="submit" id="added" class="add-btn">Add</button>
+        </form><hr>
+
+        <div id="listItem"></div>
+        <div class="complete-cont">
+          <button type="submit" id="complete-btn" class="complete-btn">Clear all completed</button>
+        </div>
+        
+      </div>
+    </section>
   </body>
 </html>
