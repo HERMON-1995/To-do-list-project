@@ -11,7 +11,9 @@ html {
 }
 
 body {
-  background-color: blanchedalmond;
+  background-image: url('../images/leaves-folder.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -41,12 +43,28 @@ section {
   border-bottom: 1px solid burlywood;
   justify-content: space-between;
   align-items: center;
-  background-color: beige;
+  background-image: url('../images/leaves-folder.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .top-div p {
   margin-left: 20px;
   font-weight: 600;
+}
+
+#rotate:hover {
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(300deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .top-div i {
@@ -123,20 +141,29 @@ section {
   display: flex;
   justify-content: center;
   height: 50px;
-  background-color: beige;
+  background-image: url('../images/leaves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top: 1px solid burlywood;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .complete-btn {
   border: none;
-  background-color: beige;
+  background-image: url('../images/flowers-page.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
   font-weight: 600;
   font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .complete-btn:hover {
-  color: white;
   border-radius: 20px;
   border: 2px solid brown;
+  background-image: none;
   background-color: brown;
 }
