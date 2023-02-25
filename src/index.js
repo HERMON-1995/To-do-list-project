@@ -5,7 +5,6 @@ import { addList, displayList } from './modules/UI.js';
 import clearCompleted from './modules/Clear_all.js';
 import localGet from './modules/Store.js';
 
-
 const form = document.querySelector('.add-list');
 const todoTask = document.getElementById('input');
 const clearAll = document.getElementById('complete-btn');
