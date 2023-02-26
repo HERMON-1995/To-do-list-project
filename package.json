@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "main -d dist",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
