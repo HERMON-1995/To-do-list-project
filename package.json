@@ -2,7 +2,7 @@
   "name": "to-do-list-project",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "webpack serve --open",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/HERMON-1995/To-do-list-project/issues"
   },
-  "homepage": "https://hermon-1995.github.io/To-do-list-project/dist/",
+  "homepage": "https://hermon-1995.github.io/To-do-list-project/dist",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
