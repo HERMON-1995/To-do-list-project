@@ -28,6 +28,15 @@ section {
   font-size: 50px;
 }
 
+.line {
+  width: 90px;
+  height: 4px;
+  background-color: rgb(136, 95, 25);
+  border-radius: 20px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
 .todo-container {
   border: 2px solid black;
   margin-top: 40px;
