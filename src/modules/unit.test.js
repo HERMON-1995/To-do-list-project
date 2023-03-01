@@ -56,6 +56,7 @@ describe('When we add and delete basic items', () => {
     // Asset
     expect(data).toHaveLength(3);
   });
+
   test('when we remove an item it should remove one list', () => {
     // Arrange
     removeList(0);
@@ -64,4 +65,4 @@ describe('When we add and delete basic items', () => {
     // Asset
     expect(data).toHaveLength(2);
   });
-  });
+});
