@@ -1,9 +1,9 @@
 import ListTemplate from './Class.js';
 import localGet from './Store.js';
 
-const todoContent = document.getElementById('listItem');
-const todoTask = document.getElementById('input');
 const displayList = () => {
+  const todoContent = document.getElementById('listItem');
+
   todoContent.replaceChildren();
   localGet().forEach((item, id) => {
     let isCompleted;
@@ -18,6 +18,7 @@ const displayList = () => {
         <div class="added-checkbox">
 
         <input class='item' id='check-${id}', "completed")' type='checkbox' ${item.Checked ? 'true' : 'false'} onChange='updateList(${id}, "completed")' ${isCompleted}>
+
         <input onkeyup='updateList(${id})' type="text" class='findInput' id='input-${id}' value='${item.description}' />
 
         </div>
@@ -28,6 +29,8 @@ const displayList = () => {
 };
 
 const addList = (description, completed, index) => {
+  const todoTask = document.getElementById('input');
+
   const listAdded = new ListTemplate(description, completed, index);
   const x = localGet();
   x.push(listAdded);
@@ -43,7 +46,7 @@ const reAssignIndex = (filteredArray) => {
   });
 };
 
-window.removeList = (id) => {
+const removeList = (id) => {
   const filteredArray = localGet().filter((item) => {
     if (item.index !== id) {
       return item;
@@ -54,6 +57,17 @@ window.removeList = (id) => {
   localStorage.setItem('listStorage', JSON.stringify(filteredArray));
 
   displayList();
+};
+
+window.updateChecked = (id) => {
+  const updateInput = document.querySelector(`#check-${id}`).value;
+  const updateArray = localGet().map((item) => {
+    if (item.index - 1 === id) {
+      item.completed = updateInput;
+    }
+    return item;
+  });
+  localStorage.setItem('listStorage', JSON.stringify(updateArray));
 };
 
 window.updateList = (id) => {
@@ -75,4 +89,4 @@ window.updateList = (id) => {
   localStorage.setItem('listStorage', JSON.stringify(updateArray));
 };
 
-export { addList, displayList };
+export { addList, displayList, removeList };
