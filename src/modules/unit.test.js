@@ -56,5 +56,12 @@ describe('When we add and delete basic items', () => {
     // Asset
     expect(data).toHaveLength(3);
   });
-
+  test('when we remove an item it should remove one list', () => {
+    // Arrange
+    removeList(0);
+    // Act
+    const data = document.querySelectorAll('.toDoItem');
+    // Asset
+    expect(data).toHaveLength(2);
+  });
   });
