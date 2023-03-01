@@ -21,17 +21,3 @@ form.addEventListener('submit', (event) => {
   addList(todoTask.value, false, localGet().length + 1);
   displayList();
 });
-
-rotate.addEventListener('click', (e) => {
-  e.preventDefault();
-  rotate.style.animation = 'rotation 2s';
-  const array = [];
-  window.localStorage.setItem('listStorage', JSON.stringify(array));
-  window.location.reload();
-});
-
-clearAll.addEventListener('click', (e) => {
-  e.preventDefault();
-  clearCompleted();
-  displayList();
-});
