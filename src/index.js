@@ -1,7 +1,7 @@
 // import _ from 'lodash';
 import './style.css';
 
-import { addList, displayList } from './modules/UI.js';
+import { addList, displayList, removeList } from './modules/UI.js';
 import clearCompleted from './modules/Clear_all.js';
 import localGet from './modules/Store.js';
 
@@ -13,6 +13,8 @@ const rotate = document.getElementById('rotate');
 window.addEventListener('load', () => {
   displayList();
 });
+
+window.removeList = removeList;
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
