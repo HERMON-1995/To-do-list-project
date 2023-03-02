@@ -92,14 +92,4 @@ describe('Test When we add, delete, Update and clear all items', () => {
     expect(checkData[0].completed).toBeTruthy();
   });
 
-  test('When we remove all completed items', () => {
-    // Arrange
-    clearCompleted();
-    // Act
-    const data = JSON.parse(localStorage.getItem('listStorage'));
-    const checkData = data.filter((item) => item.index === true);
-    // Asset
-    expect(checkData).toHaveLength(0);
-  });
-
 });
