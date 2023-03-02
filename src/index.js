@@ -1,7 +1,9 @@
 // import _ from 'lodash';
 import './style.css';
 
-import { addList, displayList, removeList } from './modules/UI.js';
+import {
+  addList, displayList, removeList, updateList, updateChecked,
+} from './modules/UI.js';
 import clearCompleted from './modules/Clear_all.js';
 import localGet from './modules/Store.js';
 
@@ -15,6 +17,8 @@ window.addEventListener('load', () => {
 });
 
 window.removeList = removeList;
+window.updateList = updateList;
+window.updatechecked = updateChecked;
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();

@@ -15,5 +15,4 @@ const clearCompleted = () => {
 
   localStorage.setItem('listStorage', JSON.stringify(incompleted));
 };
-
 export default clearCompleted;

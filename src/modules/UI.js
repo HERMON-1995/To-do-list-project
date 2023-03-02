@@ -15,12 +15,12 @@ const displayList = () => {
 
     todoContent.innerHTML += `
       <div class="toDoItem">
-        <div class="added-checkbox">
+      <div class="added-checkbox">
 
         <input class='item' id='check-${id}', "completed")' type='checkbox' ${item.Checked ? 'true' : 'false'} onChange='updateList(${id}, "completed")' ${isCompleted}>
 
         <input onkeyup='updateList(${id})' type="text" class='findInput' id='input-${id}' value='${item.description}' />
-
+        
         </div>
         <i class="delete" onclick='removeList(${item.index})' id='delete-${item.index}'>🗑️</i>
       </div>
@@ -59,7 +59,7 @@ const removeList = (id) => {
   displayList();
 };
 
-window.updateChecked = (id) => {
+const updateChecked = (id) => {
   const updateInput = document.querySelector(`#check-${id}`).value;
   const updateArray = localGet().map((item) => {
     if (item.index - 1 === id) {
@@ -70,7 +70,7 @@ window.updateChecked = (id) => {
   localStorage.setItem('listStorage', JSON.stringify(updateArray));
 };
 
-window.updateList = (id) => {
+const updateList = (id) => {
   const updateInput = document.querySelector(`#input-${id}`).value;
   const updateArray = localGet().map((item) => {
     if (item.index - 1 === id) {
@@ -89,4 +89,6 @@ window.updateList = (id) => {
   localStorage.setItem('listStorage', JSON.stringify(updateArray));
 };
 
-export { addList, displayList, removeList };
+export {
+  addList, displayList, removeList, updateChecked, updateList,
+};
