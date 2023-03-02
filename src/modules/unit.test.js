@@ -33,7 +33,6 @@ document.body.innerHTML = `
 `;
 
 describe('Test When we add, delete, Update and clear all items', () => {
-
   test('If we add an item, it should have one list', () => {
     // Arrange
     addList('Hello, I am Hermon', false, 0);
@@ -91,7 +90,7 @@ describe('Test When we add, delete, Update and clear all items', () => {
     // Asset
     expect(checkData[0].completed).toBeTruthy();
   });
-  
+
   test('When we remove all completed items', () => {
     // Arrange
     clearCompleted();
@@ -101,5 +100,4 @@ describe('Test When we add, delete, Update and clear all items', () => {
     // Asset
     expect(checkData).toHaveLength(0);
   });
-
 });
