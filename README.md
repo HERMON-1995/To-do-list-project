@@ -57,10 +57,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See live here](https://hermon-1995.github.io/My-movies-capstone-project/dist/)
+- [See live here](https://hermon-1995.github.io/To-do-list-project/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 
@@ -81,7 +80,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd To-do-list-project
-  git clone https://github.com/HERMON-1995/My-movies-capstone-project.git
+  git clone https://github.com/HERMON-1995/To-do-list-project.git
 ```
 ### Install
  
@@ -134,16 +133,17 @@ npx eslint .
 - [LinkedIn](https://www.linkedin.com/in/hermon-gebre)
  
 **Author2**
- *[Precious Betine]*
+ *[Dheeraj Sachdeva]*
  
-- [GitHub profile](https://github.com/preciousbetine) 
-
+ **Author3**
+ *[Hiwot Bayissa]*
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-    #[Implement Movie videos]
+    #[Drag and drop]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +151,7 @@ npx eslint .
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-- [Projects](https://github.com/HERMON-1995/My-movies-capstone-project/projects/1)
+- [Issues](https://github.com/HERMON-1995/To-do-list-project/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
